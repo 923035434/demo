@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <Pattern>[%yellow(%X{traceId:-}),%magenta(%X{spanId:-})]%date{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) [%thread] %logger{60}.%method:%L - %msg%n</Pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+    <springProperty scope="context" name="springAppName" source="spring.application.name"/>
+
+<!--    <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">-->
+<!--        <destination>127.0.0.1:4569</destination>-->
+<!--        &lt;!&ndash; <encoder charset="UTF-8" class="net.logstash.logback.encoder.LogstashEncoder" /> &ndash;&gt;-->
+<!--        &lt;!&ndash; 日志输出编码 &ndash;&gt;-->
+<!--        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">-->
+<!--            <providers>-->
+<!--                <timestamp>-->
+<!--                    <timeZone>UTC</timeZone>-->
+<!--                </timestamp>-->
+<!--                <pattern>-->
+<!--                    <pattern>-->
+<!--                        {-->
+<!--                        "severity": "%level",-->
+<!--                        "service": "${springAppName}",-->
+<!--                        "trace": "%X{traceId:-}",-->
+<!--                        "span": "%X{spanId:-}",-->
+<!--&lt;!&ndash;                        "exportable": "%X{X-Span-Export:-}",&ndash;&gt;-->
+<!--                        "pid": "${PID:-}",-->
+<!--                        "thread": "%thread",-->
+<!--                        "class": "%logger{60}",-->
+<!--                        "msg": "%message"-->
+<!--                        }-->
+<!--                    </pattern>-->
+<!--                </pattern>-->
+<!--            </providers>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+
+    <root level="info">
+        <appender-ref ref="CONSOLE" />
+<!--        <appender-ref ref="LOGSTASH" />-->
+    </root>
+
+</configuration>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+<!--    <include resource="org/springframework/boot/logging/logback/base.xml" />-->
+<!--    <contextName>logback</contextName>-->
+<!--    &lt;!&ndash; 记录文件到特定目录 &ndash;&gt;-->
+<!--    &lt;!&ndash;     <property name="log.path" value="C:\\Users\\dell\\Desktop\\log" />&ndash;&gt;-->
+<!--    <property name="LOG_HOME" value="${user.home}/log"/>-->
+<!--    &lt;!&ndash;日志文件名称：这里spring.application.name表示工程名称&ndash;&gt;-->
+<!--    <springProperty scope="context" name="APP_NAME" source="spring.application.name"/>-->
+<!--    <appender name="stash" class="net.logstash.logback.appender.LogstashTcpSocketAppender">-->
+<!--        <destination>192.168.8.122:5045</destination>-->
+<!--        <encoder class="net.logstash.logback.encoder.LogstashEncoder" />-->
+<!--    </appender>-->
+<!--    &lt;!&ndash;输出到控制台&ndash;&gt;-->
+<!--    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        &lt;!&ndash; <filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+<!--         <level>ERROR</level>-->
+<!--        </filter>&ndash;&gt;-->
+<!--        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">-->
+<!--            <providers>-->
+<!--                <timestamp/>-->
+<!--                <message/>-->
+<!--                <loggerName/>-->
+<!--                <threadName/>-->
+<!--                <logLevel/>-->
+<!--                &lt;!&ndash; <logLevelValue/> &ndash;&gt;-->
+<!--                <stackTrace>-->
+<!--                    <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">-->
+<!--                        <maxDepthPerThrowable>10</maxDepthPerThrowable>-->
+<!--                        <maxLength>1024</maxLength>-->
+<!--                        <shortenedClassNameLength>20</shortenedClassNameLength>-->
+<!--                        <rootCauseFirst>true</rootCauseFirst>-->
+<!--                        <inlineHash>true</inlineHash>-->
+<!--                    </throwableConverter>-->
+<!--                </stackTrace>-->
+<!--                <throwableClassName/>-->
+<!--                <throwableRootCauseClassName/>-->
+<!--                <context/>-->
+<!--                <contextName/>-->
+<!--                <nestedField>-->
+<!--                    <fieldName>fields</fieldName>-->
+<!--                    <providers>-->
+<!--                        <logstashMarkers/>-->
+<!--                    </providers>-->
+<!--                </nestedField>-->
+<!--            </providers>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+<!--    &lt;!&ndash;输出到文件&ndash;&gt;-->
+<!--    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        &lt;!&ndash;        <file>${LOG_HOME}</file>&ndash;&gt;-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            <FileNamePattern>${LOG_HOME}/%d{yyyy-MM-dd}/${APP_NAME}.log</FileNamePattern>-->
+<!--            <MaxHistory>10</MaxHistory>-->
+<!--        </rollingPolicy>-->
+<!--        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">-->
+<!--            <MaxFileSize>10MB</MaxFileSize>-->
+<!--        </triggeringPolicy>-->
+<!--        <encoder class="net.logstash.logback.encoder.LoggingEventCompositeJsonEncoder">-->
+<!--            <providers>-->
+<!--                <timestamp/>-->
+<!--                <message/>-->
+<!--                <loggerName/>-->
+<!--                <threadName/>-->
+<!--                <logLevel/>-->
+<!--                &lt;!&ndash; <logLevelValue/> &ndash;&gt;-->
+<!--                <stackTrace>-->
+<!--                    <throwableConverter class="net.logstash.logback.stacktrace.ShortenedThrowableConverter">-->
+<!--                        <maxDepthPerThrowable>10</maxDepthPerThrowable>-->
+<!--                        <maxLength>1024</maxLength>-->
+<!--                        <shortenedClassNameLength>20</shortenedClassNameLength>-->
+<!--                        <rootCauseFirst>true</rootCauseFirst>-->
+<!--                        <inlineHash>true</inlineHash>-->
+<!--                    </throwableConverter>-->
+<!--                </stackTrace>-->
+<!--                <throwableClassName/>-->
+<!--                <throwableRootCauseClassName/>-->
+<!--                <context/>-->
+<!--                <contextName/>-->
+<!--                <nestedField>-->
+<!--                    <fieldName>fields</fieldName>-->
+<!--                    <providers>-->
+<!--                        <logstashMarkers/>-->
+<!--                    </providers>-->
+<!--                </nestedField>-->
+<!--            </providers>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+<!--    <root level="info">-->
+<!--        <appender-ref ref="stash"/>-->
+<!--        <appender-ref ref="console" />-->
+<!--        <appender-ref ref="file" />-->
+<!--    </root>-->
+    <!-- logback为 java 中的包
+    <logger name="com.dudu.controller"/>
+    logback.LogbackDemo：类的全路径
+    <logger name="com.dudu.controller.LearnController" level="WARN" additivity="false">
+     <appender-ref ref="console"/>
+    </logger> -->
+</configuration>

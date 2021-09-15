@@ -1,0 +1,46 @@
+# eureka-statefulset.yaml
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eureka-client
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eureka-client
+  template:
+    metadata:
+      labels:
+        app: eureka-client
+    spec:
+      imagePullSecrets:
+        - name: alibaba-secret
+      containers:
+        - name: eureka-client
+          image: registry.cn-hangzhou.aliyuncs.com/liuxians/eureka-client:v1.0.0
+          ports:
+            - containerPort: 80
+              #hostPort: 8999
+          resources:
+            limits:
+              # jvm会自动发现该限制
+              memory: 250Mi
+
+
+#---
+#apiVersion: v1
+#kind: Service
+#metadata:
+#  name: eureka-client
+#  labels:
+#    app: eureka-client
+#spec:
+##  type: NodePort
+#  ports:
+#   - port: 8678
+#     targetPort: 80
+##     nodePort: 30087
+#  selector:
+#   app: eureka-client
+

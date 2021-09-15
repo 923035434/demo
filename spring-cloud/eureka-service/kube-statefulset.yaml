@@ -1,0 +1,56 @@
+# eureka-statefulset.yaml
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: eureka
+spec:
+  serviceName: "eureka"
+  replicas: 2
+  selector:
+    matchLabels:
+      app: eureka
+  template:
+    metadata:
+      labels:
+        app: eureka
+    spec:
+      imagePullSecrets:
+        - name: alibaba-secret
+      containers:
+        - name: eureka
+          image: registry.cn-hangzhou.aliyuncs.com/liuxians/eureka:v1.0.0
+          ports:
+            - containerPort: 8679
+          resources:
+            limits:
+              # jvm会自动发现该限制
+              memory: 300Mi
+#          env:
+#            - name: MY_POD_NAME
+#              valueFrom:
+#                fieldRef:
+#                  fieldPath: metadata.name
+#            - name: EUREKA_SERVER
+#              value: "http://eureka1.360kad.com:30086/eureka/,http://eureka2.360kad:30086/eureka/"
+#            - name: EUREKA_INSTANCE_HOSTNAME
+#              value: ${MY_POD_NAME}.eureka
+  podManagementPolicy: "Parallel"
+
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eureka
+  labels:
+    app: eureka
+spec:
+  type: NodePort
+  ports:
+   - port: 8679
+     targetPort: 8679
+     nodePort: 30086
+  selector:
+   app: eureka
+
