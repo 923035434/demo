@@ -1,4 +1,4 @@
-package com.example.springcloud.dao.model;
+package com.example.sentinel.dao.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;

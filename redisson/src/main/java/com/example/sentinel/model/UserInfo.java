@@ -1,4 +1,4 @@
-package com.example.springcloud.model;
+package com.example.sentinel.model;
 
 import lombok.Data;
 

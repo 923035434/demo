@@ -1,4 +1,4 @@
-package com.example.springcloud.service;
+package com.example.sentinel.service;
 import org.springframework.stereotype.Service;
 
 @Service

@@ -1,7 +1,7 @@
-package com.example.springcloud;
+package com.example.sentinel;
 
-import com.example.springcloud.model.ClassInfo;
-import com.example.springcloud.model.UserInfo;
+import com.example.sentinel.model.ClassInfo;
+import com.example.sentinel.model.UserInfo;
 import lombok.var;
 import org.junit.jupiter.api.Test;
 import org.redisson.api.*;

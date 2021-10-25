@@ -1,6 +1,6 @@
-package com.example.springcloud;
-import com.example.springcloud.dao.es.ProductDao;
-import com.example.springcloud.dao.model.Product;
+package com.example.sentinel;
+import com.example.sentinel.dao.es.ProductDao;
+import com.example.sentinel.dao.model.Product;
 import lombok.var;
 import org.elasticsearch.index.query.MultiMatchQueryBuilder;
 import org.junit.jupiter.api.Test;
