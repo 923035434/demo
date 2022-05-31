@@ -1,4 +1,4 @@
-package com.example.orderserver;
+package com.example.orderservice;
 
 
 

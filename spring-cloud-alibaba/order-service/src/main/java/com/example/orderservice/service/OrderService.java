@@ -1,8 +1,8 @@
-package com.example.orderserver.service;
+package com.example.orderservice.service;
 
 
-import com.example.orderserver.mapper.GoodsMapping;
-import com.example.orderserver.model.CreateOrderItem;
+import com.example.orderservice.mapper.GoodsMapping;
+import com.example.orderservice.model.CreateOrderItem;
 import com.example.service.api.client.GoodsClient;
 import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;

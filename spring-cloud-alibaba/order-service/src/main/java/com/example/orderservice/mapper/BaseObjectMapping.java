@@ -1,4 +1,4 @@
-package com.example.orderserver.mapper;
+package com.example.orderservice.mapper;
 
 /**
  * 类型转换接口定义

@@ -1,6 +1,6 @@
-package com.example.orderserver.mapper;
+package com.example.orderservice.mapper;
 
-import com.example.orderserver.model.GoodsVO;
+import com.example.orderservice.model.GoodsVO;
 import com.example.service.api.model.goods.GoodsInfo;
 import org.mapstruct.Mapper;
 import org.springframework.stereotype.Component;

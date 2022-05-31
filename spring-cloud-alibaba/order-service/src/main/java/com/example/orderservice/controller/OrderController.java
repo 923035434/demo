@@ -1,18 +1,13 @@
-package com.example.orderserver.controller;
+package com.example.orderservice.controller;
 
-import com.alibaba.nacos.api.config.annotation.NacosValue;
-import com.example.orderserver.model.CreateOrderItem;
-import com.example.orderserver.model.CreateOrderParam;
-import com.example.orderserver.service.OrderService;
-import lombok.var;
+import com.example.orderservice.model.CreateOrderParam;
+import com.example.orderservice.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 @RequestMapping(value = "/order")

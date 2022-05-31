@@ -1,4 +1,4 @@
-package com.example.orderserver.mapper;
+package com.example.orderservice.mapper;
 
 import java.util.List;
 
