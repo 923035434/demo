@@ -25,7 +25,8 @@
 
 	<modules>
 		<module>redisson</module>
-	</modules>
+        <module>proxy</module>
+    </modules>
 
 
 	<dependencies>
