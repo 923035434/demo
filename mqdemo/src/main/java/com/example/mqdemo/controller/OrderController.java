@@ -19,8 +19,19 @@ public class OrderController {
     OrderProduct orderProduct;
 
     @RequestMapping("/createOrder")
-    public void createOrder(Long orderId, BigDecimal price) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
+    public void createOrder(Long orderId, BigDecimal price) {
         orderProduct.createOrder(orderId,price);
+    }
+
+    @RequestMapping("/createOrderByTag")
+    public void createOrderByTag(Long orderId, BigDecimal price,String tag){
+        orderProduct.createOrderByTag(orderId,price,tag);
+    }
+
+
+    @RequestMapping("/createOrderTransaction")
+    public void createOrderTransaction(Long orderId){
+        orderProduct.createOrderTransaction(orderId);
     }
 
 }
