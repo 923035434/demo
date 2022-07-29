@@ -2,10 +2,16 @@ package com.example.daily_push;
 
 import com.alibaba.fastjson.JSON;
 import com.example.daily_push.job.DailyPushJob;
+import lombok.extern.slf4j.Slf4j;
 import lombok.var;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.util.CollectionUtils;
 import redis.clients.jedis.JedisPool;
 
 import java.nio.charset.StandardCharsets;
@@ -22,6 +28,10 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.stream.Collectors;
 
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = YcgpApplication.class)
+//@ActiveProfiles("dev")
+//@Slf4j
 @SpringBootTest
 class DailyPushApplicationTests {
 
@@ -113,5 +123,18 @@ class DailyPushApplicationTests {
 
 
 
+    @Test
+    public void test11(){
+        String picUrls = "pic.jpg|500*500,pic.jpg|300*300";
+        if(StringUtils.isNotEmpty(picUrls)){
+            List<String> tempList = Arrays.asList(picUrls.split(","));
+            if(!CollectionUtils.isEmpty(tempList)){
+                tempList.forEach(p->{
+                    String[] split = p.split("\\|");
+                    System.out.println(split.length);
+                });
+            }
+        }
+    }
 
 }
