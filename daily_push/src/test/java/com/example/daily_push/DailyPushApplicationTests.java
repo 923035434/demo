@@ -18,6 +18,7 @@ import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.util.CollectionUtils;
 import redis.clients.jedis.JedisPool;
 
+import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -76,6 +77,13 @@ class DailyPushApplicationTests {
 
     @Test
     void test1() {
+        BigDecimal bigDecimal = BigDecimal.valueOf(8.8);
+        BigDecimal bigDecimal1 = new BigDecimal("8.8");
+        BigDecimal bigDecimal2 = new BigDecimal(8.8); //有问题，精度丢失
+        System.out.println(bigDecimal);
+        System.out.println(bigDecimal1);
+        System.out.println(bigDecimal2);
+
     }
 
 
