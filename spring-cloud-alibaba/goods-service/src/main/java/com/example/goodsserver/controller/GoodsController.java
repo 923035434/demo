@@ -55,7 +55,7 @@ public class GoodsController implements GoodsApi {
     }
 
     @Override
-    @RequestLimit(value = 10,nacosKey = "goodsserver-search")
+    @RequestLimit(value = 10,configKey = "goodsserver-search")
     public CommonResult<List<GoodsInfo>> search() {
         System.out.println(apiRequestLimitConfig.getLimit());
         var list = new ArrayList<GoodsInfo>();

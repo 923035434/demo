@@ -12,6 +12,6 @@ public @interface RequestLimit {
     int value();
 
 
-    String nacosKey() default "";
+    String configKey() default "";
 
 }

@@ -62,7 +62,7 @@ public class ApiRequestLimitInterceptor implements HandlerInterceptor {
     public boolean isLimit(Method method, RequestLimit requestLimit) {
         RateLimiter rateLimiter = limiterMap.get(method);
         //nacos配置优先级最高
-        Integer limit = apiRequestLimitConfig.getLimit().get(requestLimit.nacosKey());
+        Integer limit = apiRequestLimitConfig.getLimit().get(requestLimit.configKey());
         if(limit==null){
             limit = requestLimit.value();
         }
