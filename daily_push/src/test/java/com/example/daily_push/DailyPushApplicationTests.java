@@ -2,12 +2,23 @@ package com.example.daily_push;
 
 import com.alibaba.fastjson.JSON;
 import com.example.daily_push.job.DailyPushJob;
+import lombok.extern.slf4j.Slf4j;
 import lombok.var;
+import org.apache.commons.lang3.StringUtils;
+import org.junit.Before;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.context.web.WebAppConfiguration;
+import org.springframework.util.CollectionUtils;
 import redis.clients.jedis.JedisPool;
 
+import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -21,6 +32,31 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.stream.Collectors;
+//spring boot
+//@RunWith(SpringRunner.class)
+//@SpringBootTest(classes = YcgpApplication.class)
+//@ActiveProfiles("dev")
+//@Slf4j
+
+//spring
+//@WebAppConfiguration
+//@RunWith(SpringJUnit4ClassRunner.class)
+//@ContextConfiguration({ "classpath:applicationContext.xml" })
+
+//ContextLoader.getCurrentWebApplicationContext()   为空处理
+//@Autowired
+//private WebApplicationContext wac;
+//
+//@Before
+//public void setApplication(){
+//        MockServletContext sc = new MockServletContext("");
+//        ServletContextListener listener = new ContextLoaderListener(wac);
+//        ServletContextEvent event = new ServletContextEvent(sc);
+//        listener.contextInitialized(event);
+//        }
+
+
+
 
 @SpringBootTest
 class DailyPushApplicationTests {
@@ -41,6 +77,13 @@ class DailyPushApplicationTests {
 
     @Test
     void test1() {
+        BigDecimal bigDecimal = BigDecimal.valueOf(8.8);
+        BigDecimal bigDecimal1 = new BigDecimal("8.8");
+        BigDecimal bigDecimal2 = new BigDecimal(8.8); //有问题，精度丢失
+        System.out.println(bigDecimal);
+        System.out.println(bigDecimal1);
+        System.out.println(bigDecimal2);
+
     }
 
 
@@ -113,5 +156,18 @@ class DailyPushApplicationTests {
 
 
 
+    @Test
+    public void test11(){
+        String picUrls = "pic.jpg|500*500,pic.jpg|300*300";
+        if(StringUtils.isNotEmpty(picUrls)){
+            List<String> tempList = Arrays.asList(picUrls.split(","));
+            if(!CollectionUtils.isEmpty(tempList)){
+                tempList.forEach(p->{
+                    String[] split = p.split("\\|");
+                    System.out.println(split.length);
+                });
+            }
+        }
+    }
 
 }
