@@ -6,7 +6,9 @@ import com.example.goodsserver.config.ApiRequestLimitConfig;
 import com.example.service.api.model.CommonResult;
 import com.google.common.util.concurrent.RateLimiter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
+import org.springframework.util.CollectionUtils;
 import org.springframework.web.method.HandlerMethod;
 import org.springframework.web.servlet.HandlerInterceptor;
 
@@ -18,6 +20,7 @@ import java.lang.reflect.Method;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Component
+@RefreshScope
 public class ApiRequestLimitInterceptor implements HandlerInterceptor {
 
 
@@ -62,7 +65,7 @@ public class ApiRequestLimitInterceptor implements HandlerInterceptor {
     public boolean isLimit(Method method, RequestLimit requestLimit) {
         RateLimiter rateLimiter = limiterMap.get(method);
         //nacos配置优先级最高
-        Integer limit = apiRequestLimitConfig.getLimit().get(requestLimit.configKey());
+        Integer limit = CollectionUtils.isEmpty(apiRequestLimitConfig.getLimit())?null:apiRequestLimitConfig.getLimit().get(requestLimit.configKey());
         if(limit==null){
             limit = requestLimit.value();
         }
