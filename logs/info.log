@@ -1,0 +1,254 @@
+2022-07-24 16:18:25.846 INFO  23120 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 23120 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:18:25.854 INFO  23120 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:18:25.845 INFO  23120 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:18:28.605 INFO  23120 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:18:28.635 INFO  23120 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:18:28.636 INFO  23120 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:18:28.636 INFO  23120 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:18:29.206 INFO  23120 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:18:29.207 INFO  23120 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3246 ms
+2022-07-24 16:18:34.918 INFO  23120 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:18:34.920 INFO  23120 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:18:34.935 INFO  23120 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:18:34.987 INFO  23120 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:18:35.006 INFO  23120 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 12.236 seconds (JVM running for 18.924)
+2022-07-24 16:19:21.461 INFO  23120 --- [http-nio-9090-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 16:19:21.461 INFO  23120 --- [http-nio-9090-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 16:19:21.463 INFO  23120 --- [http-nio-9090-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-07-24 16:21:07.938 INFO  23120 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:21:07.940 INFO  23120 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:21:25.396 INFO  23288 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:21:25.401 INFO  23288 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 23288 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:21:25.403 INFO  23288 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:21:26.451 INFO  23288 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:21:26.461 INFO  23288 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:21:26.462 INFO  23288 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:21:26.462 INFO  23288 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:21:26.744 INFO  23288 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:21:26.745 INFO  23288 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1262 ms
+2022-07-24 16:21:32.619 INFO  23288 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:21:32.620 INFO  23288 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:21:32.636 INFO  23288 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:21:32.653 INFO  23288 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:21:32.665 INFO  23288 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 9.909 seconds (JVM running for 16.146)
+2022-07-24 16:22:02.987 INFO  23288 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 16:22:02.987 INFO  23288 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 16:22:02.988 INFO  23288 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-24 16:24:27.851 INFO  22884 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 22884 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:24:27.848 INFO  22884 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:24:27.853 INFO  22884 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:24:28.925 INFO  22884 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:24:28.936 INFO  22884 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:24:28.936 INFO  22884 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:24:28.936 INFO  22884 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:24:29.214 INFO  22884 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:24:29.215 INFO  22884 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1280 ms
+2022-07-24 16:24:34.309 INFO  22884 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:24:39.358 INFO  22884 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:24:39.358 INFO  22884 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:24:39.375 INFO  22884 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:24:39.394 INFO  22884 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:24:39.408 INFO  22884 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 14.183 seconds (JVM running for 20.514)
+2022-07-24 16:26:23.280 INFO  22884 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 16:26:23.281 INFO  22884 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 16:26:23.282 INFO  22884 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-24 16:28:09.937 INFO  26848 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:28:09.939 INFO  26848 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 26848 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:28:09.941 INFO  26848 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:28:10.960 INFO  26848 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:28:10.969 INFO  26848 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:28:10.970 INFO  26848 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:28:10.970 INFO  26848 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:28:11.276 INFO  26848 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:28:11.277 INFO  26848 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1258 ms
+2022-07-24 16:28:16.674 INFO  26848 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:28:16.676 INFO  26848 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:29:22.768 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:29:22.788 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:29:22.796 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:29:22.797 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:30:28.760 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:30:28.768 INFO  26848 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:30:28.778 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:30:28.783 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:30:28.793 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:30:28.812 INFO  26848 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:30:28.826 INFO  26848 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 141.753 seconds (JVM running for 147.833)
+2022-07-24 16:30:47.756 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:30:47.756 INFO  26848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:31:25.682 INFO  28368 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:31:25.684 INFO  28368 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 28368 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:31:25.685 INFO  28368 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:31:26.884 INFO  28368 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:31:26.898 INFO  28368 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:31:26.899 INFO  28368 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:31:26.899 INFO  28368 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:31:27.184 INFO  28368 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:31:27.184 INFO  28368 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1415 ms
+2022-07-24 16:31:32.448 INFO  28368 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:31:32.449 INFO  28368 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:32:03.238 INFO  28368 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:32:03.268 INFO  28368 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:32:03.282 INFO  28368 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 40.353 seconds (JVM running for 46.091)
+2022-07-24 16:32:06.195 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:38:23.522 INFO  28368 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 16:38:23.522 INFO  28368 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 16:38:23.523 INFO  28368 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-24 16:38:45.402 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:38:45.402 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:38:54.201 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:38:54.204 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:39:37.921 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:39:42.056 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:39:42.057 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:39:42.067 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:39:42.076 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:39:47.426 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:40:07.550 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:40:25.156 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:40:25.157 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:40:42.789 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:40:42.790 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:40:49.457 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:41:33.625 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:41:33.627 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:41:33.633 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:41:33.638 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:41:45.410 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:41:45.412 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:43:00.322 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:43:00.326 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:43:00.327 INFO  28368 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:43:22.219 INFO  25020 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 25020 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:43:22.217 INFO  25020 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:43:22.221 INFO  25020 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:43:23.247 INFO  25020 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:43:23.257 INFO  25020 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:43:23.258 INFO  25020 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:43:23.258 INFO  25020 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:43:23.522 INFO  25020 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:43:23.523 INFO  25020 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1225 ms
+2022-07-24 16:43:28.653 INFO  25020 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:43:28.654 INFO  25020 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:43:28.670 INFO  25020 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:43:28.687 INFO  25020 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:43:28.701 INFO  25020 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 9.107 seconds (JVM running for 14.956)
+2022-07-24 16:45:32.021 INFO  25020 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 16:45:32.021 INFO  25020 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 16:45:32.023 INFO  25020 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2022-07-24 16:49:36.972 INFO  2584 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:49:36.973 INFO  2584 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 2584 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:49:36.976 INFO  2584 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:49:38.048 INFO  2584 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:49:38.058 INFO  2584 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:49:38.059 INFO  2584 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:49:38.059 INFO  2584 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:49:38.342 INFO  2584 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:49:38.343 INFO  2584 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1285 ms
+2022-07-24 16:49:43.627 INFO  2584 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:49:43.629 INFO  2584 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:49:43.646 INFO  2584 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:49:43.664 INFO  2584 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:49:43.679 INFO  2584 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 9.434 seconds (JVM running for 15.094)
+2022-07-24 16:49:47.871 INFO  2584 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 16:49:47.871 INFO  2584 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 16:49:47.872 INFO  2584 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-24 16:51:52.070 INFO  9848 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:51:52.073 INFO  9848 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 9848 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:51:52.074 INFO  9848 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:51:53.139 INFO  9848 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:51:53.150 INFO  9848 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:51:53.151 INFO  9848 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:51:53.151 INFO  9848 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:51:53.417 INFO  9848 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:51:53.418 INFO  9848 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1264 ms
+2022-07-24 16:51:58.621 INFO  9848 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:51:58.623 INFO  9848 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:51:58.640 INFO  9848 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:51:58.658 INFO  9848 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:51:58.672 INFO  9848 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 9.33 seconds (JVM running for 15.348)
+2022-07-24 16:52:23.775 INFO  9848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:52:23.775 INFO  9848 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:52:53.448 INFO  23420 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:52:53.452 INFO  23420 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 23420 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:52:53.453 INFO  23420 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:52:54.517 INFO  23420 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:52:54.528 INFO  23420 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:52:54.529 INFO  23420 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:52:54.529 INFO  23420 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:52:54.793 INFO  23420 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:52:54.793 INFO  23420 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1260 ms
+2022-07-24 16:52:59.953 INFO  23420 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:52:59.955 INFO  23420 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:52:59.972 INFO  23420 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:52:59.990 INFO  23420 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:53:00.012 INFO  23420 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 9.245 seconds (JVM running for 15.139)
+2022-07-24 16:53:22.766 INFO  23420 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 16:53:22.767 INFO  23420 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 16:53:22.768 INFO  23420 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-24 16:53:37.946 INFO  23420 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:53:48.547 INFO  23420 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:53:53.680 INFO  23420 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:53:53.686 INFO  23420 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:54:00.603 INFO  23420 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 16:54:04.830 INFO  23420 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 16:54:54.103 INFO  25576 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 16:54:54.103 INFO  25576 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 25576 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 16:54:54.107 INFO  25576 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 16:54:55.179 INFO  25576 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 16:54:55.189 INFO  25576 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:54:55.190 INFO  25576 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 16:54:55.190 INFO  25576 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 16:54:55.458 INFO  25576 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 16:54:55.458 INFO  25576 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1265 ms
+2022-07-24 16:55:00.707 INFO  25576 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 16:55:00.709 INFO  25576 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 16:55:00.726 INFO  25576 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 16:55:00.747 INFO  25576 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 16:55:00.763 INFO  25576 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 9.346 seconds (JVM running for 15.586)
+2022-07-24 16:55:12.867 INFO  25576 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 16:55:12.868 INFO  25576 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 16:55:12.869 INFO  25576 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-24 17:04:43.149 INFO  23072 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 17:04:43.167 INFO  23072 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 23072 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 17:04:43.168 INFO  23072 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 17:04:44.347 INFO  23072 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 17:04:44.357 INFO  23072 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 17:04:44.358 INFO  23072 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 17:04:44.358 INFO  23072 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 17:04:44.637 INFO  23072 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 17:04:44.637 INFO  23072 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1345 ms
+2022-07-24 17:04:50.178 INFO  23072 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 17:04:50.179 INFO  23072 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 17:04:50.217 INFO  23072 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 17:04:50.281 INFO  23072 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 17:04:50.304 INFO  23072 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 10.099 seconds (JVM running for 16.207)
+2022-07-24 17:04:50.367 INFO  23072 --- [http-nio-9090-exec-10] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 17:04:50.368 INFO  23072 --- [http-nio-9090-exec-10] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 17:04:50.369 INFO  23072 --- [http-nio-9090-exec-10] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-24 17:08:54.778 INFO  23072 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 17:08:54.781 INFO  23072 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 17:08:54.781 INFO  23072 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 17:08:54.781 INFO  23072 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 17:08:54.781 INFO  23072 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 17:08:54.785 INFO  23072 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 17:08:54.791 INFO  23072 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 17:08:54.791 INFO  23072 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-24 17:11:57.085 INFO  25680 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 25680 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-24 17:11:57.083 INFO  25680 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-24 17:11:57.091 INFO  25680 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-24 17:11:59.630 INFO  25680 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-24 17:11:59.641 INFO  25680 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-24 17:11:59.642 INFO  25680 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-24 17:11:59.642 INFO  25680 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-24 17:12:00.014 INFO  25680 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-24 17:12:00.014 INFO  25680 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2591 ms
+2022-07-24 17:12:00.746 INFO  25680 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-24 17:12:05.536 INFO  25680 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-24 17:12:05.536 INFO  25680 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-24 17:12:05.553 INFO  25680 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-24 17:12:05.567 INFO  25680 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-24 17:12:05.578 INFO  25680 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 11.352 seconds (JVM running for 17.99)
+2022-07-24 17:12:07.676 INFO  25680 --- [http-nio-9090-exec-10] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-24 17:12:07.676 INFO  25680 --- [http-nio-9090-exec-10] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-24 17:12:07.677 INFO  25680 --- [http-nio-9090-exec-10] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms

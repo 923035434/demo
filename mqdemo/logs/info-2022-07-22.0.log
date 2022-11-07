@@ -1,0 +1,755 @@
+2022-07-22 20:25:02.541 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.mqdemo.MqdemoApplicationTests], using SpringBootContextLoader
+2022-07-22 20:25:02.547 INFO  PID_IS_UNDEFINED --- [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.mqdemo.MqdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-22 20:25:02.569 INFO  PID_IS_UNDEFINED --- [main] o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.mqdemo.MqdemoApplicationTests]: MqdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-22 20:25:02.815 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.mqdemo.MqdemoApplication for test class com.example.mqdemo.MqdemoApplicationTests
+2022-07-22 20:25:02.969 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-22 20:25:03.095 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@12ed9db6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ff4357f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@49cb9cb5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@55322aab, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b4c1d96, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45fd9a4d, org.springframework.test.context.event.EventPublishingTestExecutionListener@50468873, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@146587a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f0e9815, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76884e4b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@126945f9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2a898881, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@16c63f5]
+2022-07-22 20:25:05.869 INFO  3052 --- [main] com.example.mqdemo.MqdemoApplicationTests - Starting MqdemoApplicationTests using Java 1.8.0_91 on SC-201909211057 with PID 3052 (started by Administrator in E:\git\demo\mqdemo)
+2022-07-22 20:25:05.870 INFO  3052 --- [main] com.example.mqdemo.MqdemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 20:25:05.901 INFO  3052 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-22 20:25:13.289 INFO  3052 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 20:25:13.293 INFO  3052 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-22 20:25:13.356 INFO  3052 --- [main] com.example.mqdemo.MqdemoApplicationTests - Started MqdemoApplicationTests in 10.203 seconds (JVM running for 15.622)
+2022-07-22 20:25:14.119 INFO  3052 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-22 20:25:14.121 INFO  3052 --- [SpringApplicationShutdownHook] o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 20:25:14.124 INFO  3052 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-22 20:57:28.201 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.mqdemo.MqdemoApplicationTests], using SpringBootContextLoader
+2022-07-22 20:57:28.208 INFO  PID_IS_UNDEFINED --- [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.mqdemo.MqdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-22 20:57:28.210 INFO  PID_IS_UNDEFINED --- [main] o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.mqdemo.MqdemoApplicationTests]: MqdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-22 20:57:28.350 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.mqdemo.MqdemoApplication for test class com.example.mqdemo.MqdemoApplicationTests
+2022-07-22 20:57:28.524 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-22 20:57:28.541 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@12ed9db6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ff4357f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@49cb9cb5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@55322aab, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b4c1d96, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45fd9a4d, org.springframework.test.context.event.EventPublishingTestExecutionListener@50468873, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@146587a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f0e9815, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76884e4b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@126945f9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2a898881, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@16c63f5]
+2022-07-22 20:57:31.378 INFO  12244 --- [main] com.example.mqdemo.MqdemoApplicationTests - Starting MqdemoApplicationTests using Java 1.8.0_91 on SC-201909211057 with PID 12244 (started by Administrator in E:\git\demo\mqdemo)
+2022-07-22 20:57:31.382 INFO  12244 --- [main] com.example.mqdemo.MqdemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 20:57:31.421 INFO  12244 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-22 20:57:39.049 INFO  12244 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 20:57:39.052 INFO  12244 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-22 20:57:39.078 INFO  12244 --- [main] com.example.mqdemo.MqdemoApplicationTests - Started MqdemoApplicationTests in 10.481 seconds (JVM running for 15.508)
+2022-07-22 20:57:39.372 INFO  12244 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-22 20:57:39.372 INFO  12244 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-22 20:57:39.379 INFO  12244 --- [SpringApplicationShutdownHook] o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 22:04:36.631 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.mqdemo.MqdemoApplicationTests], using SpringBootContextLoader
+2022-07-22 22:04:36.640 INFO  PID_IS_UNDEFINED --- [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.mqdemo.MqdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-22 22:04:36.641 INFO  PID_IS_UNDEFINED --- [main] o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.mqdemo.MqdemoApplicationTests]: MqdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-22 22:04:36.800 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.mqdemo.MqdemoApplication for test class com.example.mqdemo.MqdemoApplicationTests
+2022-07-22 22:04:36.921 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-22 22:04:36.936 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@12ed9db6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ff4357f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@49cb9cb5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@55322aab, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b4c1d96, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45fd9a4d, org.springframework.test.context.event.EventPublishingTestExecutionListener@50468873, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@146587a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f0e9815, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76884e4b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@126945f9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2a898881, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@16c63f5]
+2022-07-22 22:04:39.719 INFO  13732 --- [main] com.example.mqdemo.MqdemoApplicationTests - Starting MqdemoApplicationTests using Java 1.8.0_91 on SC-201909211057 with PID 13732 (started by Administrator in E:\git\demo\mqdemo)
+2022-07-22 22:04:39.721 INFO  13732 --- [main] com.example.mqdemo.MqdemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 22:04:39.743 INFO  13732 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-22 22:04:46.957 INFO  13732 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 22:04:46.960 INFO  13732 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-22 22:04:46.985 INFO  13732 --- [main] com.example.mqdemo.MqdemoApplicationTests - Started MqdemoApplicationTests in 10.011 seconds (JVM running for 14.973)
+2022-07-22 22:04:47.343 INFO  13732 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-22 22:04:47.346 INFO  13732 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-22 22:04:47.349 INFO  13732 --- [SpringApplicationShutdownHook] o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 22:07:32.765 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.mqdemo.MqdemoApplicationTests], using SpringBootContextLoader
+2022-07-22 22:07:32.771 INFO  PID_IS_UNDEFINED --- [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.mqdemo.MqdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-22 22:07:32.773 INFO  PID_IS_UNDEFINED --- [main] o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.mqdemo.MqdemoApplicationTests]: MqdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-22 22:07:32.903 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.mqdemo.MqdemoApplication for test class com.example.mqdemo.MqdemoApplicationTests
+2022-07-22 22:07:33.057 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-22 22:07:33.075 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2df6226d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@12ed9db6, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@4ff4357f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@49cb9cb5, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@55322aab, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2b4c1d96, org.springframework.test.context.event.EventPublishingTestExecutionListener@45fd9a4d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@50468873, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@146587a2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f0e9815, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@76884e4b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@126945f9, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2a898881]
+2022-07-22 22:07:35.737 INFO  25560 --- [main] com.example.mqdemo.MqdemoApplicationTests - Starting MqdemoApplicationTests using Java 1.8.0_91 on SC-201909211057 with PID 25560 (started by Administrator in E:\git\demo\mqdemo)
+2022-07-22 22:07:35.738 INFO  25560 --- [main] com.example.mqdemo.MqdemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 22:07:35.755 INFO  25560 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-22 22:07:42.736 INFO  25560 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 22:07:42.738 INFO  25560 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-22 22:07:42.764 INFO  25560 --- [main] com.example.mqdemo.MqdemoApplicationTests - Started MqdemoApplicationTests in 9.645 seconds (JVM running for 14.675)
+2022-07-22 22:07:43.781 INFO  25560 --- [ConsumeMessageThread_12] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.781 INFO  25560 --- [ConsumeMessageThread_10] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.782 INFO  25560 --- [ConsumeMessageThread_5] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.781 INFO  25560 --- [ConsumeMessageThread_15] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.782 INFO  25560 --- [ConsumeMessageThread_6] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.781 INFO  25560 --- [ConsumeMessageThread_17] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.781 INFO  25560 --- [ConsumeMessageThread_20] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.786 INFO  25560 --- [ConsumeMessageThread_14] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.792 INFO  25560 --- [ConsumeMessageThread_13] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.795 INFO  25560 --- [ConsumeMessageThread_19] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.796 INFO  25560 --- [ConsumeMessageThread_2] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.797 INFO  25560 --- [ConsumeMessageThread_7] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.798 INFO  25560 --- [ConsumeMessageThread_16] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.798 INFO  25560 --- [ConsumeMessageThread_1] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.799 INFO  25560 --- [ConsumeMessageThread_4] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.801 INFO  25560 --- [ConsumeMessageThread_9] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.802 INFO  25560 --- [ConsumeMessageThread_8] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.803 INFO  25560 --- [ConsumeMessageThread_11] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.806 INFO  25560 --- [ConsumeMessageThread_3] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:43.806 INFO  25560 --- [ConsumeMessageThread_18] o.a.r.s.support.DefaultRocketMQListenerContainer - convert failed. str:율율율, msgType:class com.example.mqdemo.model.Order
+2022-07-22 22:07:44.575 WARN  25560 --- [ConsumeMessageThread_11] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37E780018, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.576 WARN  25560 --- [ConsumeMessageThread_5] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37C450007, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.575 WARN  25560 --- [ConsumeMessageThread_2] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37C91000A, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.577 WARN  25560 --- [ConsumeMessageThread_6] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37CAA000B, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.575 WARN  25560 --- [ConsumeMessageThread_10] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37E8C0019, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.578 WARN  25560 --- [ConsumeMessageThread_12] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37E9D001A, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.575 WARN  25560 --- [ConsumeMessageThread_18] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37FD50028, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.581 WARN  25560 --- [ConsumeMessageThread_19] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37FE50029, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.575 WARN  25560 --- [ConsumeMessageThread_16] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37EF8001E, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.592 WARN  25560 --- [ConsumeMessageThread_14] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37EC8001C, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.592 WARN  25560 --- [ConsumeMessageThread_1] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37CBD000C, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.575 WARN  25560 --- [ConsumeMessageThread_3] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37C600008, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.593 WARN  25560 --- [ConsumeMessageThread_8] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37CD6000D, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.576 WARN  25560 --- [ConsumeMessageThread_20] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37FFA002A, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.600 WARN  25560 --- [ConsumeMessageThread_17] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37FC20027, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.576 WARN  25560 --- [ConsumeMessageThread_13] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37EAE001B, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.604 WARN  25560 --- [ConsumeMessageThread_15] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37EE3001D, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.577 WARN  25560 --- [ConsumeMessageThread_4] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37C750009, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.608 WARN  25560 --- [ConsumeMessageThread_7] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37CF4000E, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.592 WARN  25560 --- [ConsumeMessageThread_9] o.a.r.s.support.DefaultRocketMQListenerContainer - consume message failed. messageId:7F0000015B90006433A270E37E620017, topic:order_topic, reconsumeTimes:3
+java.lang.RuntimeException: cannot convert message to class com.example.mqdemo.model.Order
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:536)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.handleMessage(DefaultRocketMQListenerContainer.java:449)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.access$100(DefaultRocketMQListenerContainer.java:71)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer$DefaultMessageListenerConcurrently.consumeMessage(DefaultRocketMQListenerContainer.java:409)
+	at org.apache.rocketmq.client.impl.consumer.ConsumeMessageConcurrentlyService$ConsumeRequest.run(ConsumeMessageConcurrentlyService.java:392)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.messaging.converter.MessageConversionException: Could not read JSON: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]; nested exception is com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:237)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:185)
+	at org.springframework.messaging.converter.AbstractMessageConverter.fromMessage(AbstractMessageConverter.java:176)
+	at org.springframework.messaging.converter.CompositeMessageConverter.fromMessage(CompositeMessageConverter.java:57)
+	at org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer.doConvertMessage(DefaultRocketMQListenerContainer.java:528)
+	... 9 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token '율율율': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: (String)"율율율"; line: 1, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2391)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:745)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:2961)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2002)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:802)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4761)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4667)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at org.springframework.messaging.converter.MappingJackson2MessageConverter.convertFromInternal(MappingJackson2MessageConverter.java:232)
+	... 13 common frames omitted
+2022-07-22 22:07:44.661 INFO  25560 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-22 22:07:44.662 INFO  25560 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-22 22:07:44.664 INFO  25560 --- [SpringApplicationShutdownHook] o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 22:16:55.780 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.mqdemo.MqdemoApplicationTests], using SpringBootContextLoader
+2022-07-22 22:16:55.788 INFO  PID_IS_UNDEFINED --- [main] o.s.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.mqdemo.MqdemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2022-07-22 22:16:55.790 INFO  PID_IS_UNDEFINED --- [main] o.s.t.c.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.mqdemo.MqdemoApplicationTests]: MqdemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2022-07-22 22:16:55.973 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.mqdemo.MqdemoApplication for test class com.example.mqdemo.MqdemoApplicationTests
+2022-07-22 22:16:56.123 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2022-07-22 22:16:56.150 INFO  PID_IS_UNDEFINED --- [main] o.s.b.t.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@12ed9db6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@4ff4357f, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@49cb9cb5, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@55322aab, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2b4c1d96, org.springframework.test.context.support.DirtiesContextTestExecutionListener@45fd9a4d, org.springframework.test.context.event.EventPublishingTestExecutionListener@50468873, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@146587a2, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5f0e9815, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@76884e4b, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@126945f9, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2a898881, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@16c63f5]
+2022-07-22 22:16:59.032 INFO  8392 --- [main] com.example.mqdemo.MqdemoApplicationTests - Starting MqdemoApplicationTests using Java 1.8.0_91 on SC-201909211057 with PID 8392 (started by Administrator in E:\git\demo\mqdemo)
+2022-07-22 22:16:59.033 INFO  8392 --- [main] com.example.mqdemo.MqdemoApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2022-07-22 22:16:59.132 INFO  8392 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-22 22:17:07.721 INFO  8392 --- [main] o.a.r.s.support.DefaultRocketMQListenerContainer - running container: DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}
+2022-07-22 22:17:07.723 INFO  8392 --- [main] o.a.r.s.a.ListenerContainerConfiguration - Register the listener to container, listenerBeanName:orderConsumer, containerBeanName:org.apache.rocketmq.spring.support.DefaultRocketMQListenerContainer_1
+2022-07-22 22:17:07.761 INFO  8392 --- [main] com.example.mqdemo.MqdemoApplicationTests - Started MqdemoApplicationTests in 11.556 seconds (JVM running for 16.649)
+2022-07-22 22:17:08.061 INFO  8392 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-22 22:17:08.063 INFO  8392 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-22 22:17:08.065 INFO  8392 --- [SpringApplicationShutdownHook] o.a.r.s.support.DefaultRocketMQListenerContainer - container destroyed, DefaultRocketMQListenerContainer{consumerGroup='default', namespace='', nameServer='192.168.50.136:9876', topic='order_topic', consumeMode=CONCURRENTLY, selectorType=TAG, selectorExpression='*', messageModel=CLUSTERING', tlsEnable=false}

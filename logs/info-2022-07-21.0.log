@@ -1,0 +1,327 @@
+2022-07-21 23:06:19.599 INFO  10488 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 10488 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-21 23:06:19.602 INFO  10488 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 23:06:19.604 INFO  10488 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-21 23:06:20.477 INFO  10488 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-21 23:06:20.485 INFO  10488 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:06:20.486 INFO  10488 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-21 23:06:20.487 INFO  10488 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-21 23:06:20.702 INFO  10488 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-21 23:06:20.702 INFO  10488 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1057 ms
+2022-07-21 23:06:24.275 INFO  10488 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:06:24.284 INFO  10488 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-21 23:06:24.293 INFO  10488 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 5.088 seconds (JVM running for 7.42)
+2022-07-21 23:07:11.478 ERROR 18056 --- [main] org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender1]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender1] - No attached appenders found.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.mqdemo.MqdemoApplication.main(MqdemoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender1]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender1] - No attached appenders found.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+2022-07-21 23:16:32.816 ERROR 13524 --- [main] org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:106 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender1]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender1] - No attached appenders found.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.mqdemo.MqdemoApplication.main(MqdemoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:106 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender1]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender1] - No attached appenders found.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+2022-07-21 23:17:28.527 ERROR 12016 --- [main] org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@62:106 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender1]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender1] - No attached appenders found.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:85)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:66)
+	at java.util.ArrayList.forEach(ArrayList.java:1249)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:120)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:114)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:65)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:344)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.mqdemo.MqdemoApplication.main(MqdemoApplication.java:10)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@62:106 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type org.apache.rocketmq.logappender.logback.RocketmqLogbackAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [mqAppender1]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+ERROR in ch.qos.logback.classic.AsyncAppender[mqAsyncAppender1] - No attached appenders found.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.reinitialize(LogbackLoggingSystem.java:232)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:73)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 18 common frames omitted
+2022-07-21 23:22:35.728 INFO  6832 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 6832 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-21 23:22:35.726 INFO  6832 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-21 23:22:35.729 INFO  6832 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 23:22:36.659 INFO  6832 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-21 23:22:36.668 INFO  6832 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:22:36.669 INFO  6832 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-21 23:22:36.669 INFO  6832 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-21 23:22:36.915 INFO  6832 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-21 23:22:36.915 INFO  6832 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1142 ms
+2022-07-21 23:22:39.687 INFO  6832 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:22:39.696 INFO  6832 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-21 23:22:39.705 INFO  6832 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 6.581 seconds (JVM running for 11.717)
+2022-07-21 23:29:09.445 INFO  6832 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-21 23:29:09.445 INFO  6832 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-21 23:29:09.446 INFO  6832 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-07-21 23:29:09.530 WARN  6832 --- [http-nio-9090-exec-1] o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "1,price=100"]
+2022-07-21 23:29:21.445 ERROR 6832 --- [http-nio-9090-exec-3] org.apache.rocketmq.spring.core.RocketMQTemplate - send request message failed. destination:"order-topic", message:GenericMessage [payload=Order(orderId=1, createTime=2022-07-21T23:29:21.418, price=100), headers={id=a239daa3-9f03-ca36-9e3a-5e6290b92ed7, timestamp=1658417361421}] 
+2022-07-21 23:29:21.476 ERROR 6832 --- [http-nio-9090-exec-3] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.messaging.MessagingException: The specified topic["order-topic"] contains illegal characters, allowing only ^[%|a-zA-Z0-9_-]+$
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/; nested exception is org.apache.rocketmq.client.exception.MQClientException: The specified topic["order-topic"] contains illegal characters, allowing only ^[%|a-zA-Z0-9_-]+$
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] with root cause
+org.apache.rocketmq.client.exception.MQClientException: The specified topic["order-topic"] contains illegal characters, allowing only ^[%|a-zA-Z0-9_-]+$
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
+	at org.apache.rocketmq.client.Validators.checkTopic(Validators.java:111)
+	at org.apache.rocketmq.client.Validators.checkMessage(Validators.java:87)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendSelectImpl(DefaultMQProducerImpl.java:1150)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.request(DefaultMQProducerImpl.java:1461)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.request(DefaultMQProducer.java:645)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendAndReceive(RocketMQTemplate.java:247)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendAndReceive(RocketMQTemplate.java:268)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendAndReceive(RocketMQTemplate.java:195)
+	at com.example.mqdemo.product.OrderProduct.createOrder(OrderProduct.java:25)
+	at com.example.mqdemo.controller.OrderController.createOrder(OrderController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2022-07-21 23:30:58.538 INFO  20060 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 20060 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-21 23:30:58.536 INFO  20060 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-21 23:30:58.539 INFO  20060 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 23:30:59.381 INFO  20060 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-21 23:30:59.389 INFO  20060 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:30:59.389 INFO  20060 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-21 23:30:59.389 INFO  20060 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-21 23:30:59.603 INFO  20060 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-21 23:30:59.603 INFO  20060 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1017 ms
+2022-07-21 23:31:02.265 INFO  20060 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:31:02.274 INFO  20060 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-21 23:31:02.283 INFO  20060 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 6.286 seconds (JVM running for 11.466)
+2022-07-21 23:31:17.790 INFO  20060 --- [http-nio-9090-exec-2] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-21 23:31:17.790 INFO  20060 --- [http-nio-9090-exec-2] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-21 23:31:17.791 INFO  20060 --- [http-nio-9090-exec-2] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-21 23:31:17.879 ERROR 20060 --- [http-nio-9090-exec-2] org.apache.rocketmq.spring.core.RocketMQTemplate - send request message failed. destination:"order_topic", message:GenericMessage [payload=Order(orderId=1, createTime=2022-07-21T23:31:17.824, price=100), headers={id=5451db9e-3d91-e0e1-7b9e-f74b8e0e27c1, timestamp=1658417477827}] 
+2022-07-21 23:31:17.887 ERROR 20060 --- [http-nio-9090-exec-2] o.a.c.c.C.[.[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.messaging.MessagingException: The specified topic["order_topic"] contains illegal characters, allowing only ^[%|a-zA-Z0-9_-]+$
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/; nested exception is org.apache.rocketmq.client.exception.MQClientException: The specified topic["order_topic"] contains illegal characters, allowing only ^[%|a-zA-Z0-9_-]+$
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/] with root cause
+org.apache.rocketmq.client.exception.MQClientException: The specified topic["order_topic"] contains illegal characters, allowing only ^[%|a-zA-Z0-9_-]+$
+For more information, please visit the url, http://rocketmq.apache.org/docs/faq/
+	at org.apache.rocketmq.client.Validators.checkTopic(Validators.java:111)
+	at org.apache.rocketmq.client.Validators.checkMessage(Validators.java:87)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.sendSelectImpl(DefaultMQProducerImpl.java:1150)
+	at org.apache.rocketmq.client.impl.producer.DefaultMQProducerImpl.request(DefaultMQProducerImpl.java:1461)
+	at org.apache.rocketmq.client.producer.DefaultMQProducer.request(DefaultMQProducer.java:645)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendAndReceive(RocketMQTemplate.java:247)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendAndReceive(RocketMQTemplate.java:268)
+	at org.apache.rocketmq.spring.core.RocketMQTemplate.sendAndReceive(RocketMQTemplate.java:195)
+	at com.example.mqdemo.product.OrderProduct.createOrder(OrderProduct.java:25)
+	at com.example.mqdemo.controller.OrderController.createOrder(OrderController.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1787)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2022-07-21 23:32:37.831 INFO  20808 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-21 23:32:37.833 INFO  20808 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 20808 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-21 23:32:37.834 INFO  20808 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 23:32:38.722 INFO  20808 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-21 23:32:38.731 INFO  20808 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:32:38.732 INFO  20808 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-21 23:32:38.732 INFO  20808 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-21 23:32:38.975 INFO  20808 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-21 23:32:38.975 INFO  20808 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1084 ms
+2022-07-21 23:32:41.808 INFO  20808 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:32:41.818 INFO  20808 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-21 23:32:41.827 INFO  20808 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 6.604 seconds (JVM running for 12.766)
+2022-07-21 23:32:49.330 INFO  20808 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-21 23:32:49.330 INFO  20808 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-21 23:32:49.331 INFO  20808 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-21 23:42:26.250 INFO  17236 --- [main] com.example.mqdemo.MqdemoApplication - Starting MqdemoApplication using Java 1.8.0_91 on SC-201909211057 with PID 17236 (E:\git\demo\mqdemo\target\classes started by Administrator in E:\git\demo)
+2022-07-21 23:42:26.251 INFO  17236 --- [background-preinit] org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.3.Final
+2022-07-21 23:42:26.254 INFO  17236 --- [main] com.example.mqdemo.MqdemoApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-21 23:42:27.215 INFO  17236 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+2022-07-21 23:42:27.226 INFO  17236 --- [main] org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:42:27.227 INFO  17236 --- [main] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-21 23:42:27.228 INFO  17236 --- [main] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-21 23:42:27.477 INFO  17236 --- [main] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-21 23:42:27.478 INFO  17236 --- [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1164 ms
+2022-07-21 23:42:30.329 INFO  17236 --- [main] org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9090"]
+2022-07-21 23:42:30.350 INFO  17236 --- [main] o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+2022-07-21 23:42:30.361 INFO  17236 --- [main] com.example.mqdemo.MqdemoApplication - Started MqdemoApplication in 6.733 seconds (JVM running for 13.343)
+2022-07-21 23:42:46.199 INFO  17236 --- [http-nio-9090-exec-1] o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-21 23:42:46.200 INFO  17236 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-21 23:42:46.200 INFO  17236 --- [http-nio-9090-exec-1] org.springframework.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2022-07-21 23:50:22.454 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-21 23:50:23.507 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-21 23:50:25.454 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-21 23:50:26.508 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-21 23:50:28.460 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[] result: true
+2022-07-21 23:53:22.515 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-21 23:53:23.723 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:9876] result: true
+2022-07-21 23:53:25.516 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
+2022-07-21 23:53:26.725 INFO  17236 --- [NettyClientSelector_1] RocketmqRemoting - closeChannel: close the connection to remote address[192.168.50.136:10911] result: true
