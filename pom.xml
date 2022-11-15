@@ -26,6 +26,7 @@
 	<modules>
 		<module>redisson</module>
         <module>proxy</module>
+        <module>mapreduce</module>
     </modules>
 
 
